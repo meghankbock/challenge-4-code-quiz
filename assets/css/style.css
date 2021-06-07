@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #07ABA5;
+    --pink: #F73BD0;
+    --teal: #23F7F0;
+    --yellow: #F7CE0A;
+    --gold: #AB900F;
+    --white: white;
+    --black: black;
+}
+
+body{
+    font-family: "Open Sans";
+    color: var(--black);
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 25px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+h3, li {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin: 10px 0px;
+}
+
+main, section, .high-scores-container, .quiz-content, .start-quiz, .finish-quiz {
+    align-items: center;
+    margin: 50px 150px;
+}
+
+.high-score, .timer, a {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--pink);
+    text-decoration: none;
+}
+
+a:hover {
+    border-radius: 12px;
+    border: 2px solid var(--pink);
+}
+
+.timer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-right: 20px;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 20px;
+    background: var(--green);
+    font-size: 1.8rem;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: var(--white);
+    border-radius: 12px;
+    /*position: relative;*/
+    align-items: center;
+    box-shadow: 0 0 5px var(--teal);
+}
+
+.btn:hover {
+    background: var(--pink);
+    box-shadow: 0 0 5px var(--pink);
+}
+
+.start-quiz-btn, .quiz-return-btn {
+    position: fixed;
+    top: 50%;
+    left: 44%;
+}
+
+.answer-btn, .return-btn, .clear-btn, .submit-btn {
+    font-size: 1.3rem;
+    margin-right: 20px;
+}
+
+.quiz-return-btn {
+    font-size: 1.3rem;
+    margin-top: 200px;
+}
+
+.result {
+    margin-top: 50px;
+    font-size: 1.8rem;
+    font-family: "Open Sans"; 
+    font-style: italic;
+    color: var(--pink);
+    border-top: 2px solid var(--pink);
+}
+
+.text-input {
+    font-family:"Open Sans";
+    outline: none;
+    padding: 10px;
+    margin-right: 20px;
+    width: 25%;
+    font-size: 1.3rem;
+    border: 2px solid lightgray;
+    border-radius: 12px;
+  }
+
+ol {
+    padding-left: 20px;
+}
+
+li {
+    padding: 10px 0 10px 10px;
+}

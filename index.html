@@ -3,41 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Quiz</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
-      <section class="high-score" id="high-score"><a class="high-score-link" href="#high-scores">View high scores</a></section>
+      <section class="high-score" id="high-score-header"><a class="high-score-link" href="#high-scores">View high scores</a></section>
       <section class="timer" id="timer"></section>
     </header>
 
     <main>
       <section class="start-quiz" id="start-quiz">
-        <h1 class="page-title">Coding Quiz</h1>
+        <h1 class="page-title">Coding Quiz Challenge</h1>
         <h2>Quiz Rules</h2>
-        <p>[insert rules]</p>
-        <h2>Click the Start button to begin the quiz</h2>
-        <button class="btn" id="start-quiz-btn" type="button">Start Quiz</button>
+        <p>You have 120 seconds to complete the quiz. At the end of the quiz, your total score will equal the number of seconds remaining on the clock. Each time you answer a question wrong, 10 seconds will be deducted. When you're ready to start, click the button below. GOOD LUCK!</p>
+        <button class="btn start-quiz-btn" id="start-quiz-btn" type="button">Start Quiz</button>
       </section>
-      <section class="quiz-content" id="quiz-content">
+      <section class="quiz-content" id="quiz-content" hidden=true>
         <div class="question" id="question">
-          <h3 id="question-text"></h3>
+          <h2 id="question-text"></h2>
         </div>
         <div class="options" id="options"></div>
-        <div class="result" id="result"></div>
+        <button class="btn quiz-return-btn" id="return-btn" type="button">Start Over</button>
+        <div class="result" id="result" hidden=true></div>
       </section>
       <section class="finish-quiz" id="finish-quiz" hidden="true">
-        <h1>All Done!</h1>
-        <h2 id="final-score"></h2>
+        <h2>All Done!</h2>
+        <h3 id="final-score"></h3>
+        <div class="new-high-score" id="new-high-score"></div>
       </section>
     </main>
-    <section class="high=scores" id="high-scores" hidden="true">
-        <h1>High scores</h1>
+    <section class="high-scores-container" id="high-scores-container" hidden="true">
+        <h2>High scores</h2>
+        <p id="no-high-score"></p>
         <ol class="high-score-list" id="high-score-list"></ol>
-        <button class="btn" id="return-btn" type="button">Go Back</button>
-        <button class="btn" id="clear-high-scores" type="button">Clear High Scores</button>
+        <button class="btn return-btn" id="return-btn" type="button">Go Back</button>
+        <button class="btn clear-btn" id="clear-btn" type="button">Clear High Scores</button>
     </section>
 
     <footer></footer>
